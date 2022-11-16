@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -14,20 +14,28 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="an6-no-tnh">
-                                <rect key="frame" x="-15" y="-39" width="445" height="962"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="an6-no-tnh">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3z4-5w-w6o">
-                                <rect key="frame" x="27" y="275" width="360" height="235"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3z4-5w-w6o">
+                                <rect key="frame" x="350" y="143" width="196" height="128"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="an6-no-tnh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ESE-Mr-TvJ"/>
+                            <constraint firstItem="3z4-5w-w6o" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FOn-UL-tre"/>
+                            <constraint firstItem="3z4-5w-w6o" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="OAH-hh-tSL"/>
+                            <constraint firstAttribute="trailing" secondItem="an6-no-tnh" secondAttribute="trailing" id="OmB-HY-279"/>
+                            <constraint firstItem="3z4-5w-w6o" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="S6D-dE-chb"/>
+                            <constraint firstItem="3z4-5w-w6o" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bdQ-p2-6AR"/>
+                            <constraint firstAttribute="bottom" secondItem="an6-no-tnh" secondAttribute="bottom" id="gNK-VP-uAG"/>
+                            <constraint firstItem="an6-no-tnh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="woC-Lw-tVA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -37,7 +45,7 @@
     </scenes>
     <resources>
         <image name="DiceeLogo" width="196" height="128"/>
-        <image name="GreenBackground" width="444.66665649414062" height="414.33334350585938"/>
+        <image name="GreenBackground" width="444.5" height="414"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
